@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player with Download Option</title>
+  <style>
+    .audio-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .download-button {
+      text-decoration: none;
+      color: white;
+      background-color: #225588;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .download-button:hover {
+      background-color: #225588;
+    }
+  </style>
+</head>
+<body>
+  <div class="audio-container">
+    <!-- Audio Player -->
+    <audio controls>
+      <source src="Demo.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Custom Download Button -->
+    <a href="Demo.mp3" download class="download-button">Download</a>
+  </div>
+</body>
+</html>
